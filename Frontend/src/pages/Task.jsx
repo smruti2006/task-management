@@ -29,6 +29,10 @@ const Task =  () => {
   return (
     <>
       <button onClick={()=>{navigate("/taskcreate")}}>Create</button>
+      <button onClick={()=>{
+        localStorage.removeItem("token")
+        navigate('/login')
+      }}>Logout</button>
       {tasks.map((task, index) => (
         <div key={index}>
           <h3>{task.title}</h3>

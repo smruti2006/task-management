@@ -6,11 +6,13 @@ import Task from './pages/Task.jsx'
 import Protected from "./components/Protectedr.jsx"
 import TaskCreated from './pages/TaskCreated.jsx'
 import Update from './pages/Update.jsx'
+import Home from './pages/Home.jsx'
 
 const App = () => {
   return (
     <>
     <Routes>
+      <Route path='/' element={<Home/>}/>
       <Route path="/login" element={<Login />} />
       <Route path='/signup' element={<Signup/>}/>
       <Route element={<Protected />}>
