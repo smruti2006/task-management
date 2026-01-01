@@ -3,9 +3,9 @@ import { Navigate,Outlet } from 'react-router-dom'
 const protectedr = () => {
   const token = localStorage.getItem("token")
   if(!token){
-    Navigate("/login")
+   return <Navigate to="/login"/>
   }
-  <Outlet/>
+  return <Outlet/>
 
 }
 

@@ -4,6 +4,8 @@ import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
 import Task from './pages/Task.jsx'
 import Protected from "./components/Protectedr.jsx"
+import TaskCreated from './pages/TaskCreated.jsx'
+import Update from './pages/Update.jsx'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Route path='/signup' element={<Signup/>}/>
       <Route element={<Protected />}>
         <Route path='/task' element={<Task/>}/>
+        <Route path='/taskcreate' element = {<TaskCreated/>}/>
+        <Route path='/taskupdate/:id' element = {<Update/>}/>
       </Route>
     </Routes>
     </>
