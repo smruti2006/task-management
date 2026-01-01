@@ -40,12 +40,13 @@ A simple **To-Do Application** built using the **MERN Stack** that allows users 
 
 ```
 To-Do-App/
-├── controllers/
-├── models/
-├── routes/
-├── middleware/
-├── config/
-└── server.js
+|── backend/
+│    ├── controllers/
+│    ├── models/
+│    ├── routes/
+│    ├── middleware/
+│    ├── config/
+│    └── server.js
 │
 ├── frontend/
 │   ├── src/
